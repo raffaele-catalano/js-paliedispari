@@ -33,5 +33,11 @@ const risultato = !(somma % 2) ? 'Pari' : 'Dispari';
 
     console.warn(risultato);
 
-document.getElementById('output').innerText = `
-The Winner is: ${risultato}`;
+document.getElementById('output').innerHTML = 
+`
+The Winner is: 
+<br>
+<em>${risultato}</em>
+<br>
+<img src="https://media.tenor.com/wQpssY8j8MkAAAAC/cant-decide-never-decide.gif" alt="morra-cinese">
+`;
