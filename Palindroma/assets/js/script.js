@@ -9,7 +9,7 @@ BONUS: stilare graficamente con .css
 
 */
 
-const digitedWord = prompt('Inserisci una parola:', 'tenet');
+const digitedWord = prompt('Inserisci una parola:', 'otto');
     console.log('parola digitata -->', digitedWord);
 
     // dividere una stringa in un array
@@ -21,22 +21,45 @@ const arrayLetters = digitedWord.split('');
     // trasformare un array in una stringa
 let reverseWord = arrayLetters.join('');
 
-document.getElementById('output').innerText = (digitedWord == reverseWord) 
-? `la parola è palindroma` 
-: `la parola non è palindroma`;
+
+
+document.getElementById('output').innerHTML = (digitedWord == reverseWord) 
+? `
+la parola inserita è <strong>Palindroma</strong>!
+<br>
+<img src="https://media.tenor.com/QXVs4QWLlzkAAAAC/spider-man.gif" alt="spider-man">
+`
+: `
+la parola inserita NON è <strong>Palindroma</strong>!
+<br>
+<img src="https://media.tenor.com/fuiG0_pco2wAAAAC/confused-john-travolta.gif" alt="confused-john-travolta">
+`;
 
 
 // if (digitedWord == reverseWord) {
+//     document.getElementById('output').innerHTML = 
+//     `
+//     la parola inserita è <strong>Palindroma</strong>!
+//     <br>
+//     <img src="https://media.tenor.com/QXVs4QWLlzkAAAAC/spider-man.gif" alt="spider-man">
+//     `
 //     console.log('palindroma');
 // } else {
+//     document.getElementById('output').innerHTML = 
+//     `
+//     la parola inserita NON è <strong>Palindroma</strong>!
+//     <br>
+//     <img src="https://media.tenor.com/fuiG0_pco2wAAAAC/confused-john-travolta.gif" alt="confused-john-travolta">
+//     `
 //     console.log('non palindroma');
 // }
 
+
+
+// R A F F A E L E
+// 0 1 2 3 4 5 6 7
 
 // for (let i = arrayLetters.length; i > arrayLetters.length; i--) {
 //     const element = array[i];
 //     console.warn(element);
 // }
-
-// R A F F A E L E
-// 0 1 2 3 4 5 6 7
