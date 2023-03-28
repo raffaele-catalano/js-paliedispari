@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A2332;
+}
+
+.container {
+    margin: 100px auto;
+    color: white;
+    text-align: center;
+}
+
+.container h1 {
+    line-height: 5rem;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.container img {
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: 1px 1px 10px white;
+}
